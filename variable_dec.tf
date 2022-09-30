@@ -13,3 +13,8 @@ variable "subnet_cidr" {
   description = "cidr for subnet"
   type = string
 }
+
+variable "subnet_for_vpc_id" {
+  description = "subnet specification for vpc ID"
+  type = string
+}

@@ -3,5 +3,6 @@ resource "aws_vpc" "khans_vpc" {
   tags       = var.vpc_tags
 }
 resource "aws_subnet" "khans_subnet" {
+  vpc_id = var.subnet_for_vpc_id
   cidr_block = var.subnet_cidr
 }
