@@ -5,7 +5,7 @@ variable "vpc_cidr_block" {
 
 variable "vpc_tags" {
   description = "vpc cidr tags"
-  type        = string
+  type        = map(string)
 }
 
 // *** Subnet ***
